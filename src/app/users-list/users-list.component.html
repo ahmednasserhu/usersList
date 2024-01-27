@@ -1,0 +1,14 @@
+<!-- PARENT COMPONENT -->
+<h2 class="text-center">Users List</h2>
+<hr />
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  @for(user of Users; track user.id){
+    <div class="col">
+     <!-- CHILD COMPONENT -->
+      <!-- <app-game-card [gameItem]="game" (sendToParent)="receiveFromChild($event)"></app-game-card> -->
+        <app-user-card [singleUser]="user"></app-user-card>
+      
+      
+    </div>
+  }
+</div>

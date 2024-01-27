@@ -1,0 +1,12 @@
+<div class="card m-5" style="width: 18rem;">
+    <img [src]="singleUser.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center fw-bold">{{singleUser.username}}
+        @if(singleUser.is_verified){
+          <fa-icon [icon]="verified" class="m-2" style="color: blue;"></fa-icon>
+        }
+      </h5>
+      <p class="card-text"> <span class="fw-bold">Email: </span>{{singleUser.email}}</p>
+      <p class="card-text"> <span class="fw-bold">Phone Number: </span>{{singleUser.phone}}</p>
+    </div>
+  </div>
